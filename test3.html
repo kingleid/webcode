@@ -1,0 +1,74 @@
+<link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css testcss.css">
+
+<style>
+    .red-text{
+        color: red !important; <!-- 强制使用 -->
+    }
+    h2{
+    font-family: Lobster,Monospace;
+    }
+    p{
+        font-size:16px;
+        font-family: Monospace;
+    }
+    .thick-green-border{
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-radius:50%;
+    }
+    .smaller-image{
+        width:100px;
+    }
+    .gray-background{
+        background-color: gray;
+    }
+    .container-fluid{
+
+    }
+    .img-responsive{
+
+    }
+    .btn-primary{
+    }
+</style>
+<div class="container-fluid">
+<h2 class="red-text">Cat Photos</h2>
+
+<p>click here for<a href="#">cat photos</a>_</p>
+
+    <p><a href="#"><img class="smaller-image thick-green-border" atl="a cute orange cat lying on its back" src="http://a1.att.hudong.com/72/57/01300542684355141379570746485_s.jpg"</a></p>
+    <p><a><img class="img-responsive" src="http://img0.pclady.com.cn/pclady/1105/27/693667_588635_106.jpg"> </a></p>
+<button class="btn-primary">like</button>
+    <button class="button button-3d button-box button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+<div class="gray-background">
+<p>thing cats love</p>
+<ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+</ul>
+
+<p>top 3 things cats hate</p>
+<ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+</ol>
+</div>
+<div>
+
+
+</div>
+
+<form action="submit-cat-photos" id="cat-photo-form">
+    <label><input type="radio" name="intdoor-outdoor" checked>indoor </label>
+    <label><input type="radio" name="intdoor-outdoor">outdoor </label>
+    <label><input type="checkbox" name="personality"checked>loving </label>
+    <label><input type="checkbox" name="personality">lazy </label>
+    <label><input type="checkbox" name="personality">energetic </label>
+    <input type="text" placeholder="cat photo url" required>
+    <button type="submit">submit</button>
+
+</form>
+</div>

@@ -1,0 +1,28 @@
+<p><span>m</span><span>e</span><span>r</span><span>r</span><span>y</span><span>&nbsp;</span><span>c</span><span>h</span><span>r</span><span>i</span><span>s</span><span>t</span><span>m</span><span>a</span><span>s</span><span>!</span>
+</p>
+<style>body {
+    background: black;
+}
+
+p {
+    text-align: center;
+    font-family: arial;
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 200px;
+}</style>
+<script>var spans = document.querySelectorAll('p span');
+setInterval(function () {
+    [].forEach.call(spans, function (span) {
+        var color = '#' + Math.random().toString(16).slice(2, 8);
+        span.style.color = color;
+        span.style.textShadow = `0px 1px 0px ${color},0px 2px 0px ${color}, 0px 3px 0px ${color}, 0px 4px 0px ${color}, 0px 5px 0px ${color}, 0px 6px 0px ${color}, 0px 7px 0px ${color}`;
+    });
+}, 200);</script>
+<script>var style = document.createElement('style');
+style.innerHTML = `.bounceInLeft{animation: bounceInLeft 1s 1 cubic-bezier(0.215, 0.610, 0.355, 1.000)}@keyframes bounceInLeft {  0% {    opacity: 0;    transform: translate3d(-3000px, 0, 0);  }  20% {    opacity: 0.5;    transform: translate3d(25px, 0, 0);  }  30% {opacity: 1;    transform: translate3d(-10px, 0, 0);  }  40% {    transform: translate3d(5px, 0, 0);  }  50% {    transform: rotate(70deg);  }  70%{transform: scale(1.1);   }  80%{transform: scale(1.5);   }  90%{transform: scale(0.8);   }  100% {transform: none;  }}`;
+parent.document.body.appendChild(style);
+parent.document.querySelector('.cm_codeblock').classList.add('bounceInLeft');</script>
+<script>parent.document.querySelector('#praise-btn').addEventListener('click', function () {
+    alert('laoyao: thank you!!!')
+}, false);</script>
