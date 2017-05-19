@@ -3,17 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://unpkg.com/vue/dist/vue.js">
-        var mybut=confirm("yes on no")
-        if (mybut=true){
-                window.open('http://www.imooc.com','_blank','width=400,hight=500,menubar=no,toolbar=no')
-        }else{
+    <script>
 
-        }
     </script>
+    <style>
+        body{
+            font-size: 12px;
+        }
+        #txt{
+            height: 400px;
+            width:600px;
+            border: #333 solid 1px;
+        }
+
+        p{
+            line-height: 18px;
+            text-indent: 2em;
+        }
+    </style>
 </head>
 <body>
-<ipnut name="button" type="button" onClick="Wopen()" value="21">22</ipnut>
+<h2 id="con"> 1</h2>
+<div id="txt">
+    <h5>txt</h5>
+    <p>111111111111111111</p>
+    <p>222222222222222222</p>
+</div>
+<from>
+    <input type="button" value="color" onclick="colors()">
+    <input type="button" value="hegit" onclick="hw()">
+    <input type="button" value="xiaosi" onclick="xiaosi()">
+    <input type="button" value="show" onclick="show1()">
+    <input type="button" value="esc" onclick="esc()">
+</from>
+<script>
 
+        function colors() {
+            document.getElementById("txt").style.color="red";
+            document.getElementById("txt").style.backgroundColor="#ccc";
+        }
+      function hw() {
+            document.getElementById("txt").style.width="300px";
+          document.getElementById("txt").height="300px";
+        }
+        function xiaosi() {
+            document.getElementById("txt").style.display="none";
+        }
+       function show1() {
+           document.getElementById("txt").style.display="block";
+        }
+        function esc() {
+            var message = confirm("yes");
+            if (message == true) {
+                document.getElementById("txt").removeAttribute('style');
+            }
+        }
+
+
+</script>
 </body>
 </html>
